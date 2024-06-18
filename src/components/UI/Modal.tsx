@@ -17,7 +17,6 @@ const AddUpdateModal: React.FC<AddUpdateModalProps> = (props) => {
     formData.append("title", props?.open?.editData?.title);
     formData.append("date", props?.open?.editData?.date);
     formData.append("status", props?.open?.editData?.status);
-    formData.append("image", props?.open?.editData?.image);
     if (props?.open?.modalCategory == "Edit") {
       const Updateresponse = await UpdateTodo(
         props?.open?.editData?._id,
