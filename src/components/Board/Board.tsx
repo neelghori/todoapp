@@ -140,22 +140,6 @@ const Board: React.FC<BoardProps> = (props) => {
                                                           />
                                                         </div>
                                                       </div>
-                                                      {ele?.image ? (
-                                                        <div>
-                                                          <img
-                                                            src={`${
-                                                              import.meta.env
-                                                                .VITE_API_URL
-                                                            }/images/${
-                                                              ele.image
-                                                            }`}
-                                                            alt=""
-                                                            width={100}
-                                                            height={100}
-                                                            className="w-full h-36 object-cover"
-                                                          />
-                                                        </div>
-                                                      ) : null}
                                                     </div>
                                                   </div>
                                                 );

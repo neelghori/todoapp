@@ -1,5 +1,4 @@
 import Input from "./Input";
-import ImageUploader from "./ImageUploader";
 import Button from "./Button";
 import Badge from "./Badge";
 import Dialog from "./Dialog";
@@ -123,12 +122,12 @@ const AddUpdateModal: React.FC<AddUpdateModalProps> = (props) => {
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <ImageUploader
+          {/* <ImageUploader
             data={props?.open}
             setOpen={props?.setOpen}
             imageurl={props?.open?.editData?.image}
             onChange={(e) => handleChange(e, "image")}
-          />
+          /> */}
           <div className="flex flex-col gap-3">
             <label>Status</label>
             <div className="flex flex-wrap gap-3">
